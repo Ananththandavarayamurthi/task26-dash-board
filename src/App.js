@@ -54,7 +54,7 @@ const [Value,setValue] = useState("hi")
         
           <Route path='/navbar' element={<Navbar data={{data,setValue,Value,student,setStudent}}/>}/>
           <Route path='/addUser' element={<AddUser data={{data,setValue,Value,student,setStudent}}/>}/>
-          <Route path='*' element={<Navigate to='./addUser'/>}/>
+          <Route path='*' element={<Navigate to='./navbar'/>}/>
           <Route path='/edit-user/:id' element={<Edituser data={{student,setStudent}}/>}/>
         </Routes>
   
