@@ -7,7 +7,7 @@ function Sidebar() {
          <ul className="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
                     {/* <!-- Sidebar - Brand --> */}
-                    <Link to='./Navbar'><span className="sidebar-brand d-flex align-items-center justify-content-center">
+                    <Link to='./dashboard'><span className="sidebar-brand d-flex align-items-center justify-content-center">
                 <div className="sidebar-brand-icon rotate-n-15">
                     <i className="fas fa-laugh-wink"></i>
                     </div>
@@ -20,7 +20,7 @@ function Sidebar() {
 
                     {/* <!-- Nav Item - Dashboard --> */}
                     <li className="nav-item active">
-                    <Link to='./navbar'>
+                    <Link to='./dashboard'>
                     <div className="nav-link" >
         <i className="fas fa-fw fa-tachometer-alt"></i>
         <span>Dashboard</span></div>

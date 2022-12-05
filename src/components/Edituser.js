@@ -22,7 +22,7 @@ function Edituser(props) {
             setBatch(props.data.student[params.id].batch)
         }
         else{
-            navigate('/navbar')
+            navigate('/dashboard')
         }
 
     },[]

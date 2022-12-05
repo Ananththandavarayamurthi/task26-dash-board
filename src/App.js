@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
 import Edituser from './components/Edituser';
 
+
 import {BrowserRouter,Routes,Route,Navigate} from 'react-router-dom'
 function App() {
 
@@ -41,7 +42,7 @@ function App() {
       email:"raj@gamil.com",
       batch:"tamil"
     }
-  ])
+  ]) 
 
 const [Value,setValue] = useState("hi")
 
@@ -49,12 +50,12 @@ const [Value,setValue] = useState("hi")
     <div id="wrapper">
         
   <BrowserRouter>
-  <Sidebar />
+        <Sidebar />
         <Routes>
         
-          <Route path='/navbar' element={<Navbar data={{data,setValue,Value,student,setStudent}}/>}/>
+          <Route path='/dashboard'  element={<Navbar data={{data,setValue,Value,student,setStudent}}/>}/>
           <Route path='/addUser' element={<AddUser data={{data,setValue,Value,student,setStudent}}/>}/>
-          <Route path='*' element={<Navigate to='./navbar'/>}/>
+          <Route path='*' element={<Navigate to='./dashboard'/>}/>
           <Route path='/edit-user/:id' element={<Edituser data={{student,setStudent}}/>}/>
         </Routes>
   
